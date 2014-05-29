@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="Container">
+  <div id="header">
+    <ul>
+      <li><a href="/">Главная страница</a></li>
+      <li><a href="/articles">Статьи</a></li>
+      <li><a href="/welcome/foto">Фото галерея</a></li>
+      <li><a href="/welcome/summary">Резюме</a></li>
+      <li><a href="/welcome/contacts">Контакты</a></li>
+    </ul>
+  </div>
+  
+  <div id="right">
+    <div class="post">
+			
+			<%= yield %>
+  <br />
+			      </p>
+	</div>
+	
+  </div>
+  <div id="left">    	
+		<div id="updates" class="boxed">
+			<h2 class="title">Новости: </h2>
+			<div class="content2">
+				<ul>
+					<li>
+						<h3>4 октября, 1987г.</h3>
+						<h3>Родился Патреев И.И. </h3>
+					</li>
+					<li> </br>
+						<h3>1 июня, 2010г. Патреев И.И. Закончил БГУ </h3>
+						
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+ </div>
+  <div id="footer">
+    <p>Design by ק@†ŘØŋ</a></p>
+		<abbr title="eXtensible HyperText Markup Language">Ruby on rails</abbr>
+		
+  </div>
+
+</body>
+</html>

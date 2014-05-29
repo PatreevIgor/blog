@@ -1,0 +1,192 @@
+﻿header/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style-type:none;
+}
+
+a:link {
+	color: #DDDDDD;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #DDDDDD;
+}
+
+body {
+	background: #000000 url('/assets/PatronBlogFon.jpg') no-repeat center top;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#Container {
+	width: 718px;
+	margin: 0 auto;
+	padding-left: 30px;
+}
+
+#header {
+	width: 748px;
+	height: 504px;
+	
+}
+#header ul{
+	width: 680px;
+	display: block;
+	padding-top: 420px;
+	padding-left: 60px;
+	background: none;
+}
+#header ul li{
+	background:none; height:22px; padding:0 14px 0 5px; margin:0;
+	display:block;  float:left; 
+	}
+#header ul li a{
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #D7CEBD;
+	text-decoration: none;
+	text-indent: 0px;
+	padding: 10px;
+	font-weight: bold;
+	margin: 0;
+}
+#header ul li a:hover{
+	color: #FF9933;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+#left {
+	float: left;
+	width: 200px;
+}
+
+#left H3
+{
+font-size: 14px;
+color: #FFFFFF;
+font-family: Arial, Helvetica, sans-serif;
+}
+.title
+{
+font-size: 18px;
+padding-top: 10px;
+color: #FFFFFF;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#right {
+    float: right;
+	width: 470px;
+	margin: 10px;
+	padding: 10px;
+	background: #373737;
+	border: 1px solid #dddddd
+}
+#right h1{
+	font: 30px  Arial, Helvetica, sans-serif;
+	color: #DDDDDD;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+#right h2{
+	font: 24px  Arial, Helvetica, sans-serif;
+	color: #DDDDDD;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+#right p{
+	background: no-repeat;
+	color: #DDDDDD;
+	padding-left: 20px;
+	font: 13px/20px  Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+}
+
+.post a{
+	font: 13px/12px  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #DDDDDD;
+	text-decoration: underline;
+}
+.post a:hover{
+	background: no-repeat;
+	color: #FF6600;
+	font-weight: normal;
+}
+
+.post li
+{
+padding-left: 40px;
+}
+
+#footer {
+	margin: 0 auto;
+	clear: both;
+	width: 100%;
+	height: 82px;
+	padding-top: 20px;
+	border-top: 5px solid #A64908;
+	text-align: center;
+	font-size: 10px;
+	color: #FFFFFF;
+	background: url(/assets/footer.gif) repeat-x bottom;
+	font-family: Arial, Helvetica, sans-serif
+}
+#footer a
+{
+    font-size: 10px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.boxed {
+	margin-bottom: 20px;
+}
+
+
+.boxed .content2 {
+	padding: 10px;
+}
+
+
+#text1, #text2 {
+	width: 100px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+
+#updates ul {
+	margin: 0;
+	list-style: none;
+}
+
+#updates h3 {
+	margin: 0;
+	font: bold x-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+#updates p {
+	margin-bottom: 1.4em;
+	font-size: smaller;
+	line-height: normal;
+}
