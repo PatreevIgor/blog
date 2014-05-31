@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  resources :users
+
+  get '/users/show', to: 'users#index'
+
+
+
+
+
    root 'welcome#index'
    resources :articles do
       resources :comments

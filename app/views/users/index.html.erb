@@ -1,0 +1,33 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+          <!--   <th>Original Avatar</th> -->
+      <th>Avatar</th>
+      <th>Resume Filename</th>
+    </tr>
+  </thead>
+
+  <tbody>
+	<% @users.each do |user| %>
+      <tr>
+
+        <td><%= user.name %></td>
+        		<!-- display the avatar in both the original size and the thumbnail size -->
+		<!-- <td><%= image_tag user.avatar.url %></td> -->
+		<td><%= image_tag user.avatar.url(:thumb) %></td>
+
+		<!-- show the filename for the resume -->
+        <td><%= user.resume_file_name %></td>
+        <td><%= link_to 'Удалить', user_path(user), method: :delete %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

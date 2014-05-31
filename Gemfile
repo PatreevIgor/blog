@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Paperclip gem for managing file uploads
+gem 'paperclip', '~> 3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
