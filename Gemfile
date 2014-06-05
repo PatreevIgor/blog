@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# Using Underscore.js to sort our messages in the view
+gem 'underscore-rails'
+
+
 # Paperclip gem for managing file uploads
 gem 'paperclip', '~> 3.0'
 
@@ -20,7 +24,7 @@ gem 'heroku'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '~> 2.2.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

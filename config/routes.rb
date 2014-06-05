@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-
+  resources :messages
   resources :users
+ 
 
+
+
+  #get '/message', to: 'messages#index'
   get '/users/show', to: 'users#index'
-
+  get '/dr/index', to: 'dr#index'
 
 
 
 
    root 'welcome#index'
    resources :articles do
-      resources :comments
+   resources :comments
    end
   get '/welcome/foto', to: 'welcome#foto'
   get '/welcome/contacts', to: 'welcome#contacts'
