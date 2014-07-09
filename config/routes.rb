@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   get '/welcome/contacts', to: 'welcome#contacts'
   get '/welcome/summary', to: 'welcome#summary'
 
+
+  get '/ku/kuravn', to: 'ku#kuravn'
+  get '/ku/input', to: 'ku#input'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
