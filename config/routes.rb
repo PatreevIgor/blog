@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :infas
+
   resources :messages
   resources :users
  
@@ -6,6 +8,7 @@ Rails.application.routes.draw do
 
 
   #get '/message', to: 'messages#index'
+
   get '/users/show', to: 'users#index'
   get '/dr/index', to: 'dr#index'
 
@@ -23,6 +26,15 @@ Rails.application.routes.draw do
 
   get '/ku/kuravn', to: 'ku#kuravn'
   get '/ku/input', to: 'ku#input'
+
+
+
+# для записной книги
+  get '/control_users', to: 'infas#control_users'
+   get '/enterpassword', to: 'infas#pass'
+  get '/dfsdfsdfsdfsdf/trytrytrytrytrytry', to: 'infas#acses_denied'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

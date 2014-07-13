@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @infa.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @infa.description %>
+</p>
+
+<%= link_to 'Edit', edit_infa_path(@infa) %> |
+<%= link_to 'Back', infas_path %>

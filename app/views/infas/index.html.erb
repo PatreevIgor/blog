@@ -1,0 +1,27 @@
+<h1>Listing infas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @infas.each do |infa| %>
+      <tr>
+        <td><%= infa.title %></td>
+        <td><%= infa.description %></td>
+        <td><%= link_to 'Show', infa %></td>
+        <td><%= link_to 'Edit', edit_infa_path(infa) %></td>
+        <td><%= link_to 'Destroy', infa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Infa', new_infa_path %>
